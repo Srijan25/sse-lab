@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void foo(int x, float y) {
+    int i = 10;
+    float f = 3.14;
+    char c = 'a';
+    printf("Inside foo():\n");
+    printf("\tx = %d\n", x);
+    printf("\ty = %f\n", y);
+    printf("\ti = %d\n", i);
+    printf("\tf = %f\n", f);
+    printf("\tc = %c\n", c);
+}
+
+int bar(char c, double d) {
+    int i = 42;
+    double pi = 3.14159;
+    printf("Inside bar():\n");
+    printf("\tc = %c\n", c);
+    printf("\td = %lf\n", d);
+    printf("\ti = %d\n", i);
+    printf("\tpi = %lf\n", pi);
+    return i;
+}
+
+int main() {
+    char c = 'X';
+    double d = 2.71828;
+    printf("Inside main():\n");
+    printf("\tc = %c\n", c);
+    printf("\td = %lf\n", d);
+    foo(42, 3.14159);
+    int result = bar('Z', 1.23456);
+    printf("Result of bar() = %d\n", result);
+    return 0;
+}

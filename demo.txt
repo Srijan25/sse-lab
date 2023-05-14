@@ -1,0 +1,4 @@
+cd "d:\6 sem\SSE Lab"
+cd "d:\6 sem\SSE Lab\" ; if ($?) { gcc second.c -o second } ; if ($?) { .\second }
+
+main
